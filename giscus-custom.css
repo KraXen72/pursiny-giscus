@@ -1,0 +1,60 @@
+@import url('https://giscus.app/themes/light.css');
+.gsc-comments {
+	--cs1: 0.3rem;
+	--cs2: 0.6rem;
+	gap: calc(var(--cs2) * 1.5)
+}
+
+.gsc-timeline {
+	gap: var(--cs2)
+}
+
+.gsc-comment-box-tabs > div,
+.gsc-comment-box-main,
+.gsc-comment-box-bottom {
+	margin: var(--cs1) !important;
+}
+
+
+.gsc-comment-box-tabs > div {
+	margin-bottom: 0 !important;
+}
+
+.gsc-replies {
+	padding-top: 0;
+}
+
+.gsc-reply,
+.gsc-comment-content,
+.gsc-comment-content.markdown {
+	padding: var(--cs2);
+}
+.gsc-reply .gsc-tl-line {
+	inset-inline-start: calc(30px - calc(1rem - var(--cs2)));
+}
+.gsc-comment-header {
+	padding-left: var(--cs2);
+	padding-right: var(--cs2);
+	padding-top: var(--cs2);
+}
+.gsc-comment-footer {
+	margin-bottom: var(--cs2)
+}
+
+.gsc-comment-reactions {
+	margin-inline-start: var(--cs2);
+}
+.gsc-comment-replies-count,
+.gsc-reply-reactions {
+	margin-inline-end: var(--cs2);
+}
+
+.gsc-reply-box {
+	padding: 0;
+	border: none;
+}
+#__next .gsc-reply-box button.form-control.rounded {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-width: 1px 0 0 0;
+}
